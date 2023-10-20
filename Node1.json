@@ -1,0 +1,363 @@
+{
+  "kind": "Node",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "ip-###-###-###-###.ca-central-1.compute.internal",
+    "uid": "2cc8615c-94bd-4e23-a3cb-812e49a05414",
+    "resourceVersion": "48127",
+    "creationTimestamp": "2023-10-17T23:54:52Z",
+    "labels": {
+      "beta.kubernetes.io/arch": "amd64",
+      "beta.kubernetes.io/instance-type": "t3.medium",
+      "beta.kubernetes.io/os": "linux",
+      "eks.amazonaws.com/capacityType": "ON_DEMAND",
+      "eks.amazonaws.com/nodegroup": "semirdevops-workerNodeGroup",
+      "eks.amazonaws.com/nodegroup-image": "ami-07906f8a26ff09c22",
+      "failure-domain.beta.kubernetes.io/region": "ca-central-1",
+      "failure-domain.beta.kubernetes.io/zone": "ca-central-1b",
+      "k8s.io/cloud-provider-aws": "887c14970c4406593770b0821098c184",
+      "kubernetes.io/arch": "amd64",
+      "kubernetes.io/hostname": "ip-###-###-###-###.ca-central-1.compute.internal",
+      "kubernetes.io/os": "linux",
+      "node.kubernetes.io/exclude-from-external-load-balancers": "true",
+      "node.kubernetes.io/instance-type": "t3.medium",
+      "topology.kubernetes.io/region": "ca-central-1",
+      "topology.kubernetes.io/zone": "ca-central-1b"
+    },
+    "annotations": {
+      "alpha.kubernetes.io/provided-node-ip": "192.168.113.73",
+      "node.alpha.kubernetes.io/ttl": "0",
+      "volumes.kubernetes.io/controller-managed-attach-detach": "true"
+    },
+    "managedFields": [
+      {
+        "manager": "kubelet",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2023-10-17T23:54:52Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:alpha.kubernetes.io/provided-node-ip": {},
+              "f:volumes.kubernetes.io/controller-managed-attach-detach": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:beta.kubernetes.io/arch": {},
+              "f:beta.kubernetes.io/os": {},
+              "f:eks.amazonaws.com/capacityType": {},
+              "f:eks.amazonaws.com/nodegroup": {},
+              "f:eks.amazonaws.com/nodegroup-image": {},
+              "f:kubernetes.io/arch": {},
+              "f:kubernetes.io/hostname": {},
+              "f:kubernetes.io/os": {}
+            }
+          },
+          "f:spec": {
+            "f:providerID": {}
+          }
+        }
+      },
+      {
+        "manager": "aws-cloud-controller-manager",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2023-10-17T23:54:53Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:labels": {
+              "f:beta.kubernetes.io/instance-type": {},
+              "f:failure-domain.beta.kubernetes.io/region": {},
+              "f:failure-domain.beta.kubernetes.io/zone": {},
+              "f:k8s.io/cloud-provider-aws": {},
+              "f:node.kubernetes.io/instance-type": {},
+              "f:topology.kubernetes.io/region": {},
+              "f:topology.kubernetes.io/zone": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "aws-cloud-controller-manager",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2023-10-17T23:54:53Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            "f:addresses": {
+              "k:{\"type\":\"ExternalDNS\"}": {
+                ".": {},
+                "f:address": {},
+                "f:type": {}
+              },
+              "k:{\"type\":\"ExternalIP\"}": {
+                ".": {},
+                "f:address": {},
+                "f:type": {}
+              },
+              "k:{\"type\":\"InternalDNS\"}": {
+                ".": {},
+                "f:address": {},
+                "f:type": {}
+              }
+            }
+          }
+        },
+        "subresource": "status"
+      },
+      {
+        "manager": "kube-controller-manager",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2023-10-18T03:12:35Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              "f:node.alpha.kubernetes.io/ttl": {}
+            }
+          },
+          "f:spec": {
+            "f:taints": {}
+          }
+        }
+      },
+      {
+        "manager": "vpcLambda",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2023-10-18T03:12:35Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:labels": {
+              "f:node.kubernetes.io/exclude-from-external-load-balancers": {}
+            }
+          },
+          "f:spec": {
+            "f:unschedulable": {}
+          }
+        }
+      },
+      {
+        "manager": "kubelet",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2023-10-18T03:15:57Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            "f:allocatable": {
+              "f:ephemeral-storage": {}
+            },
+            "f:conditions": {
+              "k:{\"type\":\"DiskPressure\"}": {
+                "f:lastHeartbeatTime": {}
+              },
+              "k:{\"type\":\"MemoryPressure\"}": {
+                "f:lastHeartbeatTime": {}
+              },
+              "k:{\"type\":\"PIDPressure\"}": {
+                "f:lastHeartbeatTime": {}
+              },
+              "k:{\"type\":\"Ready\"}": {
+                "f:lastHeartbeatTime": {},
+                "f:lastTransitionTime": {},
+                "f:message": {},
+                "f:reason": {},
+                "f:status": {}
+              }
+            },
+            "f:images": {}
+          }
+        },
+        "subresource": "status"
+      }
+    ]
+  },
+  "spec": {
+    "providerID": "aws:///ca-central-1b/i-0864ac4b59654849f",
+    "unschedulable": true,
+    "taints": [
+      {
+        "key": "node.kubernetes.io/unschedulable",
+        "effect": "NoSchedule",
+        "timeAdded": "2023-10-18T03:12:35Z"
+      }
+    ]
+  },
+  "status": {
+    "capacity": {
+      "cpu": "2",
+      "ephemeral-storage": "20959212Ki",
+      "hugepages-1Gi": "0",
+      "hugepages-2Mi": "0",
+      "memory": "3943364Ki",
+      "pods": "17"
+    },
+    "allocatable": {
+      "cpu": "1930m",
+      "ephemeral-storage": "18242267924",
+      "hugepages-1Gi": "0",
+      "hugepages-2Mi": "0",
+      "memory": "3388356Ki",
+      "pods": "17"
+    },
+    "conditions": [
+      {
+        "type": "MemoryPressure",
+        "status": "False",
+        "lastHeartbeatTime": "2023-10-18T03:15:57Z",
+        "lastTransitionTime": "2023-10-17T23:54:52Z",
+        "reason": "KubeletHasSufficientMemory",
+        "message": "kubelet has sufficient memory available"
+      },
+      {
+        "type": "DiskPressure",
+        "status": "False",
+        "lastHeartbeatTime": "2023-10-18T03:15:57Z",
+        "lastTransitionTime": "2023-10-17T23:54:52Z",
+        "reason": "KubeletHasNoDiskPressure",
+        "message": "kubelet has no disk pressure"
+      },
+      {
+        "type": "PIDPressure",
+        "status": "False",
+        "lastHeartbeatTime": "2023-10-18T03:15:57Z",
+        "lastTransitionTime": "2023-10-17T23:54:52Z",
+        "reason": "KubeletHasSufficientPID",
+        "message": "kubelet has sufficient PID available"
+      },
+      {
+        "type": "Ready",
+        "status": "True",
+        "lastHeartbeatTime": "2023-10-18T03:15:57Z",
+        "lastTransitionTime": "2023-10-17T23:55:05Z",
+        "reason": "KubeletReady",
+        "message": "kubelet is posting ready status"
+      }
+    ],
+    "addresses": [
+      {
+        "type": "InternalIP",
+        "address": "192.168.113.73"
+      },
+      {
+        "type": "ExternalIP",
+        "address": "35.183.142.228"
+      },
+      {
+        "type": "InternalDNS",
+        "address": "ip-###-###-###-###.ca-central-1.compute.internal"
+      },
+      {
+        "type": "Hostname",
+        "address": "ip-###-###-###-###.ca-central-1.compute.internal"
+      },
+      {
+        "type": "ExternalDNS",
+        "address": "ec2-35-183-142-228.ca-central-1.compute.amazonaws.com"
+      }
+    ],
+    "daemonEndpoints": {
+      "kubeletEndpoint": {
+        "Port": 10250
+      }
+    },
+    "nodeInfo": {
+      "machineID": "ec227e20a7519c7944a9496d44cbb194",
+      "systemUUID": "ec227e20-a751-9c79-44a9-496d44cbb194",
+      "bootID": "ba5fd8a0-2585-4179-b92a-5526362e08b4",
+      "kernelVersion": "5.10.192-183.736.amzn2.x86_64",
+      "osImage": "Amazon Linux 2",
+      "containerRuntimeVersion": "containerd://1.6.19",
+      "kubeletVersion": "v1.28.1-eks-43840fb",
+      "kubeProxyVersion": "v1.28.1-eks-43840fb",
+      "operatingSystem": "linux",
+      "architecture": "amd64"
+    },
+    "images": [
+      {
+        "names": [
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/amazon/aws-network-policy-agent@sha256:71fbb862ba51217f4c8a22502cba6fa8baa098b80590ea753378694b7c82a4db",
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/amazon/aws-network-policy-agent:v1.0.2-eksbuild.1"
+        ],
+        "sizeBytes": 291584005
+      },
+      {
+        "names": [
+          "docker.io/library/mongo@sha256:d341a86584b96eb665345a8f5b35fba8695ee1d0618fd012ec4696223a3d6c62",
+          "docker.io/library/mongo:latest"
+        ],
+        "sizeBytes": 258566569
+      },
+      {
+        "names": [
+          "docker.io/learnitguide/knotejs@sha256:3721310316c9fef8ab3745ad14b4bc5f4ed3ea5f9dce4dc3bd34ce21846588a3",
+          "docker.io/learnitguide/knotejs:1.0"
+        ],
+        "sizeBytes": 67175012
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni-init:v1.15.0-eksbuild.2"
+        ],
+        "sizeBytes": 59729985
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/amazon-k8s-cni-init@sha256:2e23a3ecc3fbb541a474a6096cd5ec7ebf91ec6ebe4aac3ddc8ff3c18cd6d242",
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/amazon-k8s-cni-init:v1.14.1-eksbuild.1",
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni-init:v1.14.1-eksbuild.1"
+        ],
+        "sizeBytes": 59656571
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni:v1.15.0-eksbuild.2"
+        ],
+        "sizeBytes": 45015981
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/amazon-k8s-cni@sha256:0aea2419c512f8d41a28d9c4c203247582e434a90e77a5bcd5beb22cbe7a0a4a",
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/amazon-k8s-cni:v1.14.1-eksbuild.1",
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni:v1.14.1-eksbuild.1"
+        ],
+        "sizeBytes": 44053007
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/eks/kube-proxy@sha256:5ab5ddb93ba8833e9090ca7ea4780ade10812890c4855dd0f89ab138406d1793",
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/eks/kube-proxy:v1.28.1-minimal-eksbuild.1",
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/kube-proxy:v1.28.1-minimal-eksbuild.1"
+        ],
+        "sizeBytes": 30630500
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/kube-proxy:v1.28.2-minimal-eksbuild.2"
+        ],
+        "sizeBytes": 30628240
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/eks/coredns@sha256:b5d40542d3a72b3c709de62c40f37f498beba800075526dfa9ff8ce423541c20",
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.2"
+        ],
+        "sizeBytes": 16224951
+      },
+      {
+        "names": [
+          "602401143452.dkr.ecr.ca-central-1.amazonaws.com/eks/pause:3.5",
+          "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/pause:3.5"
+        ],
+        "sizeBytes": 298689
+      }
+    ]
+  }
+}
