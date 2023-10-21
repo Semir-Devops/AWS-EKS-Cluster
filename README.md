@@ -37,4 +37,15 @@ Below is an image of a basic Kubernetes cluster (which we will create):
 
 To create a Cluster we must store it into a network,
 
-I have created a VPC in AWS using a CloudFormation template that was created by AWS (attached into my repo).
+I have created a VPC in AWS using a CloudFormation template that was created by AWS (attached into my repo).<br/>When creating a VPC, feel free to use this document template or your own.
+
+This allows us to run an EKS cluster within that network and allow access to it as we see fit
+
+My VPC stack looks something like this:
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/55f29362-9448-4061-b5e8-3239ac73a4fe)
+
+<hr/>
+
+
+
