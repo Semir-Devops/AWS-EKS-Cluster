@@ -20,15 +20,21 @@ Below is an image of a basic Kubernetes cluster (which we will create):
 
 <ins><b>Master Node components:</b></ins>
 
- * API Server:
- * Controller Manager:
- * Scheduler:
- * etcd:
+ * API Server: Executes commands for you, this is done by UI or CLI (kubect).
+ * Controller Manager: runs differrent controllers in your backend (for CRUD of your Nodes, pods etc.)
+ * Scheduler: Schedules pod executions & queues API execute commands
+ * etcd: A database for your Kubernetes cluster, contains information on your cluster (nodes/pods running etc.)
 
 <ins><b>Master Node components:</b></ins>
 
- * Kubelet:
- * Kube-proxy:
- * Container-Runtime:
- * Pod:
-    * Container:
+ * Kubelet: This component of your WorkerNode is an agane that ensures your pods are healthy
+ * Kube-proxy: This is where you maintain network rules/access to your nodes
+ * Container-Runtime: This component executes run commands to your containers in your pods (Docker)
+ * Pod: The smallest unit of your K8 cluster, this is where your containers live and are run
+    * Container: The instance of your application which is run by docker
+
+<hr/>
+
+To create a Cluster we must store it into a network,
+
+I have created a VPC in AWS using a CloudFormation template that was created by AWS (attached into my repo).
