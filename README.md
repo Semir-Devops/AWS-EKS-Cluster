@@ -70,3 +70,29 @@ Head to EKS console in AWS and use the cluster Role as well as the VPC (with all
 ![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/bb81ac96-3dde-4a87-9092-6042c98dc8d7)
 
 <hr/>
+
+The next step is to create an EC2 instance (t2.medium) that will act as your Master node.
+
+Ensure you are able to SSH (in whatever mathod you choose) into it as we will be using kubectl to manage our cluster.
+
+
+
+<hr/>
+
+Once Creation is complete, navigate to the compute section of your cluster and create a Node Group.
+
+I have attached a *Node1.json* file to the repo to show what a worker Node looks like.
+
+When configuring:
+
+ - Use WorkerNode role you created
+ - all subnets of VPC created
+ - Allow remote access to nodes
+ - Use SSH keyPair (I have made sure the Master Node and worker nodes are using the same key pair, but this is up to you)
+ - t3.medium instance type, minimum 20 GB space
+ - Scaling configuration for Auto scaling of nodes (optional)
+
+You should see your nodes after creating as such:
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/013002b3-1c16-404c-9380-f0b6797ca432)
+
