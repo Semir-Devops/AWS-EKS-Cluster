@@ -47,5 +47,26 @@ My VPC stack looks something like this:
 
 <hr/>
 
+The next thing to do is create IAM roles that allow your cluster to manage Master and Worker nodes.<br/>You must do this in order to run a Kubernetes cluster.
 
+Go to IAM > Roles and create these roles with these permissions:
 
+<b>eksClusterRole:</b>
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/27653f53-01bc-410e-8aac-c1e1acd1e076)
+
+<b>ec2WorkerNodeRole:</b>
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/7b4f13f1-05a0-4964-9319-877952f13d35)
+
+<hr/>
+
+We are finally ready to create an EKS cluster. 
+
+Head to EKS console in AWS and use the cluster Role as well as the VPC (with all subnets) you just created:
+
+(A default VPC security group will be fine for this tutorial as well as Public & Private endpoint access to your cluster). 
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/bb81ac96-3dde-4a87-9092-6042c98dc8d7)
+
+<hr/>
