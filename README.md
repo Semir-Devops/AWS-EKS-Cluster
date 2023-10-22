@@ -75,7 +75,9 @@ The next step is to create an EC2 instance (t2.medium) that will act as your Mas
 
 Ensure you are able to SSH (in whatever mathod you choose) into it as we will be using kubectl to manage our cluster.
 
-Follow this <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html" target="_blank">tutorial</a> by AWS to install kubectl on this Master node.
+Follow this <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html">tutorial</a> by AWS to install kubectl on this Master node.
+
+Please also use 'aws configure' command to allow configuration of your AWS account from the CLI (must have AWS CLI installed, some AMIs will already have it).
 
 <hr/>
 
@@ -90,9 +92,12 @@ When configuring:
  - Allow remote access to nodes
  - Use SSH keyPair (I have made sure the Master Node and worker nodes are using the same key pair, but this is up to you)
  - t3.medium instance type, minimum 20 GB space
- - Scaling configuration for Auto scaling of nodes (optional)
+ - Scaling configuration for Auto scaling of nodes (2 minimum size, maximum is optional)
 
 You should see your nodes after creating as such:
 
 ![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/013002b3-1c16-404c-9380-f0b6797ca432)
 
+<hr/>
+
+After your nodes' creation process is complete, you should be able to  
