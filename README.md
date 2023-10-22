@@ -120,6 +120,27 @@ The next step is to clone the <a href="https://github.com/Semir-Devops/Node-App"
 
 Kubernetes takes yaml files and uses that to run your application.There are two methods to deploy applications in our pods.
 
- - Interactive
- - Declarative (which we are using here by using this repo to deploy an application).
+ - <ins>Interactive</ins>
+ - <ins>Declarative (which we are using here by using this repo to deploy an application).</ins>
 
+Navigate to where the Node-App repo is cloned on, and run the commands below:
+
+```
+kubectl apply -f knote.yaml
+kubectl apply -f mongo.yaml
+
+```
+
+These applications will run a replica each as well, so in case of a failure, the node will automatically launch another container of the apps.<br/> 
+One container is a mongoDB backend and the other is a knote app frontend, any notes taken in this site will upload to the mongoDB database.<br/>
+The knote app has an IP address that is attached to a Load Balancer as specified in the yaml file, to access it from the internet. 
+
+<hr/>
+
+Run the highlighted commands in the image below and you should have these results:
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/fa3a34ff-ff52-45a1-97ee-49c40dc5dc15)
+
+Then copy the LoadBalancer URL to your browser and you should see the knote app:
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/67f189bf-ca6e-4e3f-b7f2-0bf4bde15c8e)
