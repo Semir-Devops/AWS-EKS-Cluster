@@ -75,7 +75,7 @@ The next step is to create an EC2 instance (t2.medium) that will act as your Mas
 
 Ensure you are able to SSH (in whatever mathod you choose) into it as we will be using kubectl to manage our cluster.
 
-Follow this <a target="_blank" href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html">tutorial</a> by AWS to install kubectl on this Master node.
+Follow this <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html" target="_blank">tutorial</a> by AWS to install kubectl on this Master node.
 
 <hr/>
 
