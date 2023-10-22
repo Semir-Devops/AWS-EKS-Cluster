@@ -116,3 +116,10 @@ This command will allow you to create the kubeconfig file in your Master Node an
 
 ![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/9c4e224b-71fb-4793-8ded-83687d7837df)
 
+The next step is to clone the <a href="https://github.com/Semir-Devops/Node-App">Node-App</a> repository on my github to use its application contents.
+
+Kubernetes takes yaml files and uses that to run your application.There are two methods to deploy applications in our pods.
+
+ - Interactive
+ - Declarative (which we are using here by using this repo to deploy an application).
+
