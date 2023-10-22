@@ -77,7 +77,10 @@ Ensure you are able to SSH (in whatever mathod you choose) into it as we will be
 
 Follow this <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html">tutorial</a> by AWS to install kubectl on this Master node.
 
-Please also use 'aws configure' command to allow configuration of your AWS account from the CLI (must have AWS CLI installed, some AMIs will already have it).
+Please also use 'aws configure' command to allow configuration of your AWS account from the CLI (must have AWS CLI installed, some AMIs will already have it).<br/>You must have configured an Access Key to your User in IAM.
+
+![aws-config](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/77b65f81-414e-450d-b006-f2d6f165ae8f)
+
 
 <hr/>
 
@@ -100,4 +103,16 @@ You should see your nodes after creating as such:
 
 <hr/>
 
-After your nodes' creation process is complete, you should be able to  
+After your nodes' creation process is complete & have installed kubectl, you should be able to see your nodes
+
+In your Master Node, run:
+
+```
+aws eks --region <region-where-your-cluster-exists> update-kubeconfig --name <name-of-cluster>
+
+```
+
+This command will allow you to create the kubeconfig file in your Master Node and manage it from there.<br/>You should see something like:
+
+![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/9c4e224b-71fb-4793-8ded-83687d7837df)
+
