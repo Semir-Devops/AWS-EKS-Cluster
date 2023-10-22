@@ -112,7 +112,7 @@ aws eks --region <region-where-your-cluster-exists> update-kubeconfig --name <na
 
 ```
 
-This command will allow you to create the kubeconfig file in your Master Node and manage it from there.<br/>You should see something like:
+This command will create the kubeconfig file in your Master Node and manage your cluster from there.<br/>You should see something like:
 
 ![image](https://github.com/Semir-Devops/AWS-EKS-Cluster/assets/144611511/9c4e224b-71fb-4793-8ded-83687d7837df)
 
